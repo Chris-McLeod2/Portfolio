@@ -43,6 +43,7 @@ header nav ul a:hover {
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 .hero h2 {
     font-size:40px;
@@ -54,12 +55,7 @@ header nav ul a:hover {
     padding: 10% 0% 0% 0%;
     padding-left: 8%;
 }
-.aboutme {
-    padding: 10% 4% -1% 0%;
-    padding-left: 10%;
-}
-.imageofself {
-    height: 10px;
-    width: 10px;
-    padding-left: 90%;
+#about-me {
+    display:flex;
+    flex-direction:row;
 }
