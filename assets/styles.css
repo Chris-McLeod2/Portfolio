@@ -52,10 +52,16 @@ header nav ul a:hover {
     margin: 2% 10% 10% 1%;
 }
 .hero h4{
-    padding: 10% 0% 0% 0%;
-    padding-left: 8%;
+    font-size: 30px;
 }
 #about-me {
     display:flex;
     flex-direction:row;
+    justify-content: space-between;
 }
+#imageofself img{
+    padding: 8%;
+    height: 100%;
+    width: 70%;
+}
+/*end of about me/hero*/
