@@ -1,7 +1,16 @@
+    
 * {
     padding: 0;
     margin: 0;
 }
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/*end of global elements*/
 header {
     background-color: black;
     display: flex;
@@ -28,4 +37,13 @@ header nav ul li a{
 header nav ul a:hover {
     color: gray;
 }
-
+/*end header bar*/
+.hero {
+    background-image: url("../assets/images/vector1.jpg"); 
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Introduction {
+    Padding: 20px;
+}
