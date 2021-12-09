@@ -1,124 +1,200 @@
-    
 * {
+    margin: 0;
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
+
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    background: linear-gradient(50deg, darkgray,black);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/*end of global elements*/
+
 header {
+    padding: 20px 35px;
     background-color: black;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
+    flex-wrap: wrap;
 }
+
 header h1 {
-    color: #fff;
-    padding-left: 10px;
-    margin: 0;
-}
-header nav{
-    margin: auto 0;
-}
-header nav ul li {
-    display: inline;
-}
-header nav ul li a{
-    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 36px;
     color: white;
+    margin: 0;
+    display: inline; 
+}
+
+header a {
     text-decoration: none;
+    color: white;
 }
-header nav ul a:hover {
-    color: gray;
+
+header nav {
+    margin: 7px 0;
 }
-/*end header bar*/
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 0 30px; 
+    font-weight: lighter;
+    font-size: 20px; 
+    padding: 0 8px 3px 8px;
+}
+header nav ul li a:hover {
+    color: blue;
+    border-bottom: 4px solid blue;
+}
+/* end of header styles */
+
+
+section {
+    padding: 60px;
+}
+
+
 .hero {
-    background-image: url("../assets/images/vector1.jpg"); 
+    background-image: url("../assets/images/vector1.jpg");
+    height: 300px;
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
 }
-.hero h2 {
-    font-size:40px;
+/*end of hero styles */
+
+.section {
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
-.Introduction {
-    margin: 2% 10% 10% 1%;
+.sectiontitle {
+    font-size: 25px;
+    text-align: right;
+    padding-right: 15px;
+    flex: 25%;
+    border-right: 3px solid purple;
 }
-.hero h4{
-    font-size: 30px;
+/* section styles */
+
+.aboutcontent {
+    padding-left: 25px;
+    flex: 75%;
 }
-.aboutme {
+/* end of aboutcontent */
+
+.projectcontainer {
+    padding-left: 25px;
+    flex: 75%;
     display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-}
-#imageofself img{
-    padding: 8%;
-    height: 100%;
-    width: 70%;
-}
-/*end of about me/hero*/
-.projectcatalog h2 {
-    text-align: center;
-    background-color: black;
-}
-.project-container {
-    background-color:black;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 20px;
 }
 .project {
-    text-align: center;
-    margin:0 auto;
+    flex: 1 0 0; 
+    margin: 0 10px 10px 10px;
+}
+.project:hover {
+    border: 5px solid blue;
+}
+.project:first-child {
+    flex-basis: 75%;
 }
 .project img {
-   height: 300px;
-   width: 300px;
-   border-radius: 40px;
+    width: 100%;
+    min-width: 200px;
 }
-.project img:hover {
-    width: 350px;
-    height: 350px;
-}
-.project-container p {
-    color:gray;
-}
-/*end of projects section*/
-.contact-me {
-    background-color:gray;
+.tagline {
+    background-color: black;
+    color: gray;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
-.contact-me .Get-In-Contact {
-    font-size: 25px;
-    padding-right: 200px;
+/* end of project container*/
+
+.skillscontent {
+    padding-left: 45px;
+    flex: 75%;
+    line-height: 2;
 }
-.contactlinks {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    padding: 5px;
-    justify-content: space-evenly;
-    height: 200px;
+/* end of skills section */
+
+.contactinfo {
+    padding-left: 25px;
+    flex: 75%;
 }
-.contactlinks a {
-    color:white;
+.contactinfo address a {
     text-decoration: none;
-    font-size: 15px;
+    color: black;
 }
-.contactlinks a:hover {
-    color:blue;
-    font-size: 20px;
+.contactinfo address a:hover {
+    color: blue;
+    border-bottom: 4px solid blue;
+}
+/* contact info end */
+footer {
+    background-color: black;
+    color:gray;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+footer h2 {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sub-header {
+        margin: auto auto;
+    }
+    .section-title {
+        font-size: 30px;
+        text-align: center;
+        flex: 100%;
+        border-bottom: 3px solid black;
+        border-right: 0px;
+        padding: 0 0 20px 0;
+    }
+    .about-content, .work-content, .skills-content, .contact-content {
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    section {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        margin: 0 10px; 
+    }
+    section {
+        padding: 30px;
+    }
 }

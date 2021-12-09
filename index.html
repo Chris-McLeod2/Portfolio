@@ -3,88 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./assets/styles.css">
-    <link rel="images" href="./assets/images">
-    <title>Chris McLeod Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Chris McLeod's Portfolio</title>
 </head>
 
-<!--header element/links-->
 <body>
+
+    <!--header-->
     <header>
-        <h1>Software Dev</h1>
+        <h1>Software Dev Portfolio</h1>
         <nav>
             <ul>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#about-me">About me</a>
-                </li>
-                <li>
-                    <a href="#contactme">Contact me</a>
-                </li>
+                <li> <a href="#aboutme">ABOUT ME</a> </li>
+                <li> <a href="#projects">PROJECTS</a> </li>
+                <li> <a href="#skills">SKILLS</a> </li>
+                <li> <a href="#contact">CONTACT ME</a> </li>
             </ul>
         </nav>
     </header>
 
-    <!--Image/introduction-->
+    <!--hero-->
     <section class="hero">
-        <article class="Introduction">
-            <div>
-                <h2>Hello, My name is Chris McLeod</h2>
-                  <h3>Welcome to my Portfolio Projects, and Contact Information are found below</h3>
-                  <h4 id="about-me">About me</h4>
-            </div>
-
-            <div class="aboutme">
-                   
-                <div>
-                    <p>I'm a software developer currently attending University
-                    of Wisconsin Extended Campus Coding bootcamp also here is a lot of facts and stuff about me not
-                     really
-                im just writing all of this so the about me takes up more space so i can be sure it works right 
-                with my image</p>
-                </div>
-                <div id="imageofself">
-                    <img src="assets/images/placeholder.jfif">
-                </div>
-            </div>
-        </article>
     </section>
 
-    <section class="projectcatalog" id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
+    <!--aboutme-->
+    <section class="section" id="aboutme">
+        <div class="sectiontitle">
+            <h2>
+                About Me
+            </h2>
+        </div>
+        <div class="aboutcontent">
+            <p>
+                My name is Chris McLeod I'm studying to become a software developer as the field interests me.
+            </p>
+                <br>
+            <p>
+                I was interested in coding since highschool but never thought to pursue it until after
+                college at which point i decided the best course of action would be the UW flexible Option bootcamp.
+            </p>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section class="section"  id="projects" >
+        <div class="sectiontitle">
+            <h2>Projects</h2>
+        </div>
+        <div class="projectcontainer">
             <div class="project">
-                <img src="assets/images/istockphoto-1147544807-612x612.jpg">
-                <p>Project Description</p>
+                <a href="">
+                    <img src="./assets/images/vector1.jpg" alt="" />
+                </a>
+                <div class="tagline">
+                    <p>Run Buddy</p>
+                </div>
             </div>
             <div class="project">
-                <img src="assets/images/istockphoto-1147544807-612x612.jpg">
-                <p>Project Description</p>
+                <a href="#">
+                    <img src="assets/images/istockphoto-1147544807-612x612.jpg" alt="project to come" />
+                </a>
+                <p>Unavailable</p>
             </div>
             <div class="project">
-                <img src="assets/images/istockphoto-1147544807-612x612.jpg">
-                <p>Project Description</p>
+                <a href="#">
+                    <img src="assets/images/istockphoto-1147544807-612x612.jpg" alt="project to come" />
+                </a>
+                <p>Unavailable</p>
             </div>
             <div class="project">
-                <img src="assets/images/istockphoto-1147544807-612x612.jpg">
-                <p>Project Description</p>
+                <a href="#">
+                    <img src="assets/images/istockphoto-1147544807-612x612.jpg" alt="project to come" />
+                </a>
+                <p>Unavailable</p>
             </div>
             <div class="project">
-                <img src="assets/images/istockphoto-1147544807-612x612.jpg">
-                <p>Project Description</p>
+                <a href="#">
+                    <img src="assets/images/istockphoto-1147544807-612x612.jpg" alt="project to come" />
+                </a>
+                <p>Unavailable</p>
             </div>
         </div>
     </section>
 
-    <section class="contact-me" id="contactme">
-        <h2 class="Get-In-Contact">Get In Contact</h2>
-            <div class="contactlinks">
-                <a href="https://github.com/Chris-McLeod2">Github</a>
-                <a href="mailto:mcleod32@live.com">Email</a>
-            </div>
+    <!--skills-->
+    <section class="section" id="skills">
+        <div class="sectiontitle">
+            <h2>Skills</h2>
+        </div>
+        <div class="skillscontent">
+            <ul>
+                <li>GitHub</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
     </section>
+
+    <!--contactinfo-->
+    <section class="section" id="contact">
+        <div class="sectiontitle">
+            <h2>Contact</h2>
+        </div>
+        <div class="contactinfo">
+          <p>Click Email Below to Reach Out</p>
+            <address>
+                <a href="McLeod32@live.com">Email</a>
+            </address>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <h2>By Chris McLeod</h2>
+    </footer>
 
 </body>
 
