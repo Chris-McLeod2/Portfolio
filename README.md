@@ -6,7 +6,7 @@
 <h2>Screenshot of the portfolio</h2>
  <img src="./assets/images/portfoliolanding.png" />
 
-
+<p> The webpage is divided into easy to manage sections so that css styling is very easy to change and future images will be easier to add, in the future there will be an image of self in the about me page </p>
 
   <h2>Contributors</h2>
   <p>Chris McLeod</p>    
@@ -15,6 +15,6 @@
 <p>CSS</p>
 
  <h2> Deployable Link</h2>
-https://chris-mcleod2.github.io/challenge-week1/
+https://chris-mcleod2.github.io/Portfolio/
 <h2> Github Link </h2>
-https://github.com/Chris-McLeod2/challenge-week1.git
+https://github.com/Chris-McLeod2/Portfolio
